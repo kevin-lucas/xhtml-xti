@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Universidade XTI - XHTML - Aula 18 - Formulários de Controle</title>
+	</head>
+	<body>
+		<form action="aula18_formularios_controle.html" method="GET">
+			Nome: <input type="text" id="nome" /><br /><br />
+			Senha: <input type="password" id="nome" /><br />
+			Sexo: <br />
+			Masculino: <input type="radio" name="sexo" value="Masculino" /><br>
+			Feminino: <input type="radio" name="sexo" value="Feminino" /><br><br>
+			Conhecimentos <br />
+			<input type="checkbox" name="conhecimentos" value="Java" placeholder="">Java<br />
+			<input type="checkbox" name="conhecimentos" value="Java" placeholder="">Html<br />
+			<input type="checkbox" name="conhecimentos" value="Java" placeholder="">Css<br />
+			<input type="checkbox" name="conhecimentos" value="Java" placeholder="">Xslt<br /><br />
+			Curriculo <br />
+			<input type="file" id="curriculo"><br /><br />
+			<input type="submit" value="Enviar"><br />
+			<input type="reset" value="Limpar"><br />
+			<input type="button" value="Validar"><br />
+			<br>
+			<!-- atr value é utilizado caso queira que seja enviar para o servidor um
+			valor diferente do fumulario Brasil -> brazil -->
+			País: <br>
+			<select name="pais" multiple>
+				<option value="brazil">Brasil</option>
+				<option value="">França</option>
+				<option value="">Alemanha</option>
+				<option value="">Argentina</option>
+			</select>
+			<br><br>
+			Editores ou Navegadores
+			<select id="en">
+				<optgroup label="Editores">
+					<option>Notpad++</option>
+					<option>Visual Code</option>
+					<option>Sublime Text</option>
+					<option>Notpad++</option>
+				</optgroup>
+				<optgroup label="Navegadores">
+					<option>Firefox</option>
+					<option>Chrome</option>
+					<option>Safari</option>
+					<option>IE</option>
+				</optgroup>
+			</select>
+		</form>
+		<!-- Aula sobre acessibilidade -->
+		<form>
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" /><br /><br />
+			<label>Senha:</label><input type="password" id="nome" /><br />
+		</form>
+	</body>
+</html>

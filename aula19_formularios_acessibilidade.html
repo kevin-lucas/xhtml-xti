@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Universidade XTI - XHTML - Aula 19 - Formulários de Acessibilidade</title>
+	</head>
+	<body>
+		<form action="aula18_formularios_controle.html" method="GET">
+			
+			<fieldset>
+				<legend>Informações Pessoais</legend>
+				
+				<input type="hidden" name="chave" value="asdasds">
+
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" tabindex="4" value="Nome" accesskey="n" disabled="disabled" /><br /><br />
+				<label for="senha">Senha:
+					<input type="password" id="senha" tabindex="3" readonly="readonly" value="12312312" 
+					/><br />
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Informações Profissionais</legend>
+				
+				<label for="trabalho">Local Trabalho:</label>
+				<input type="text" id="trabalho" tabindex="1" /><br /><br />
+			</fieldset>
+
+		</form>
+	</body>
+</html>
